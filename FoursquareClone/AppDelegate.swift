@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Parse server ile bağlantı kurabilmem için aşağıdaki üç özellik gerekli !
+        let configuration = ParseClientConfiguration { (ParseMutableClientConfiguration) in
+            ParseMutableClientConfiguration.applicationId = "f0c31matlWE2DLLuFiXn3V3D7hvUKyAHYEPGOtVZ"
+            ParseMutableClientConfiguration.clientKey = "doF7SFkPvuw4Uh6YYBx2DMJ6gPTTV2B3J3finozn"
+            ParseMutableClientConfiguration.server = "https://parseapi.back4app.com/"
+        }
+        
+        Parse.initialize(with: configuration)
+        
+        // Kullanıcıyı hatırlama işlemi. Parse'ın current metodunu kullandıktan sonra Storyboard'tan değişken oluşturup onları burada kullanıyorum. Tableview'ımın olduğu ekrana identifier'dan id verip burada ona atama yapabiliyorum.
+        let currentUser = PFUser.current()
+        if currentUser != nil {
+            let board = UIStoryboard(name: "Main", bundle: nil)
+            let navigationController = board.instantiateViewController(withIdentifier: "navigationController")
+            
+            // Artık başlangıç oku bu ekranda olsun diyorum.
+            window?.rootViewController = navigationController
+        }
+        
         return true
     }
 
