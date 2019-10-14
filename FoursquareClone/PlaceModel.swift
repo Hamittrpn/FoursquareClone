@@ -27,6 +27,8 @@ class PlaceModel{
     var placeType = ""
     var placeDescription = ""
     var placeImage = UIImage()
+    var placeLatitude = ""
+    var placeLongitude = ""
     
     // Başka hiç bir yerden initilaze işlemi yapılamaz.
     private init(){}
