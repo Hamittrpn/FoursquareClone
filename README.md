@@ -1,6 +1,6 @@
 # Foursquare Clone App With Parse
 
-### Parse
+### Parsing server operations
 - Parse integration
 - Server connection
 - Save data to the Parse Server
@@ -8,7 +8,7 @@
 - Creating users for parse servers
 - Application login procedures and validations
 
-### Swift
+### General operations
 - Using TableView
 - TabItem
 - User session recall (Remember Me)
