@@ -1,5 +1,7 @@
 # Foursquare Clone App With Parse
 
+![](https://avatars3.githubusercontent.com/u/26932219?v=4)
+
 ### Parsing server operations
 - Parse integration
 - Server connection
