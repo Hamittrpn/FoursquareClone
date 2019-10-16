@@ -93,11 +93,11 @@
 				95DE88F42351D60D00D14EFA /* AddPlaceVC.swift */,
 				95DE88F22351C63B00D14EFA /* PlacesVC.swift */,
 				95DE88F62351D7AE00D14EFA /* MapVC.swift */,
+				952F7A052351E293001D5A2B /* DetailsVC.swift */,
 				9536CD902350B13200596918 /* Main.storyboard */,
 				9536CD932350B13300596918 /* Assets.xcassets */,
 				9536CD952350B13300596918 /* LaunchScreen.storyboard */,
 				9536CD982350B13300596918 /* Info.plist */,
-				952F7A052351E293001D5A2B /* DetailsVC.swift */,
 				952F7A072351E829001D5A2B /* PlaceModel.swift */,
 			);
 			path = FoursquareClone;
